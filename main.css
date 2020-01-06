@@ -1,38 +1,148 @@
+* {
+  text-align: center; 
+  font-family: 'Public Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+header {
+  width: 300px;
+  margin: auto;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+}
+h1 {
+  color: gray;
+}
+
+.btn {
+  width: 280px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.light-btn {
+  background-color: white;
+  color: #6D71DF;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.price-annually {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.price-monthly {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+.pricing-panel {
+  width: 370px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  height: 400px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.pricing-panel > p {
+  border-bottom: 1px solid lightgray;
+  width: 70%;
+  margin: auto;
+  padding: 15px;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-.pricing-container {
-  display: flex;
 
+
+.main-title {
+  margin-bottom: 50px;
+  margin-top: 80px;
 }
-* {
-  text-align: center; 
-  font-family: 'Public Sans', sans-serif;
+
+html, body {
+  height: 100%;
 }
 
 body {
+  background-image: 
+  url(/images/bg-top.svg),
+  url(/images/bg-bottom.svg);
+  background-position:
+    top right, /* this positions the first image */
+    bottom left; /* this positions the second image */
+  background-repeat:
+    no-repeat; /* this applies to both images */
   background-color: rgb(247,247,255);
+  background-size: 430px, 430px;
+
+}
+
+
+
+
+.pricing {
+  margin: auto;
+  white-space: nowrap;
+}
+
+.panel-one {
+  box-shadow: -20px 20px 80px  rgba(111,115,229, .2);
+  border-radius: 10px 0 0 10px;
+}
+
+.panel-two {
+  background-image: linear-gradient(120deg, #A0A7F1,#6D71DF);
+  color: white;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  border-radius: 10px;
+}
+
+.panel-three {
+  box-shadow: 20px 20px 80px  rgba(111,115,229, .2);
+  border-radius: 0px 10px 10px 0px;
 }
 
 .gradient {
-  background-image: linear-gradient(to right, rgb(159,162,227), rgb(111,115,229));
+  background-image: linear-gradient(120deg, #A0A7F1,#6D71DF);
 }
 
 .switch-label {
   display: inline-block;
   margin: 0 10px;
   transform: translateY(3px);
+  color: lightslategrey;
 }
 
-.pricing {
-  margin: auto;
-}
+
 
 /* The switch - the box around the slider */
 .switch {
@@ -40,6 +150,7 @@ body {
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin-bottom: 40px;
 }
 
 /* Hide default HTML checkbox */
