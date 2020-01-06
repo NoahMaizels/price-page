@@ -95,8 +95,6 @@ p {
   border-radius: 10px 0 0 10px;
 }
 
-
-
 .panel-three {
   box-shadow: 20px 20px 80px  rgba(111,115,229, .2);
   border-radius: 0px 10px 10px 0px;
@@ -111,7 +109,7 @@ p {
   height: 350px;
   padding-bottom: 50px;
   padding-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .panel-two {
@@ -256,9 +254,20 @@ input:checked + .slider:before {
     display: block;
   }
 
-  .panel-two {
+  .panel-one {
     padding-bottom: 50px;
     padding-top: 20px;
+    box-shadow: -20px 20px 80px  rgba(111,115,229, .2);
+    border-radius: 10px;
+  }
+
+  .panel-two {
+    box-shadow: -20px 20px 80px  rgba(111,115,229, .2);
+  }
+
+  .panel-three {
+    box-shadow: -20px 20px 80px  rgba(111,115,229, .2);
+    border-radius: 10px;
   }
 
   body {
