@@ -144,8 +144,8 @@ html, body {
 
 body {
   background-image: 
-  url(/images/bg-top.svg),
-  url(/images/bg-bottom.svg);
+  url(images/bg-top.svg),
+  url(images/bg-bottom.svg);
   background-position:
     top right, /* this positions the first image */
     bottom left; /* this positions the second image */
@@ -271,7 +271,7 @@ input:checked + .slider:before {
   }
 
   body {
-    background-image: url(/images/bg-top.svg);
+    background-image: url(images/bg-top.svg);
     background-position: top right; /* this positions the first image */
     background-repeat: no-repeat; /* this applies to both images */
     background-color: rgb(247,247,255);
