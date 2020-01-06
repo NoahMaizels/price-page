@@ -1,6 +1,6 @@
 * {
   text-align: center; 
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -11,13 +11,22 @@ header {
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
 }
 h1 {
   color: gray;
 }
 
+.dark-btn {
+  background: linear-gradient(120deg, #A0A7F1,#6D71DF);
+  border: 1px solid rgba(0, 0, 0, 0)
+}
+
 .btn {
-  width: 280px;
+  width: 200px;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -33,24 +42,39 @@ h1 {
 .light-btn {
   background-color: white;
   color: #6D71DF;
+  border: 1px solid rgba(0, 0, 0, 0)
 }
 
 .btn:hover {
   cursor: pointer;
 }
 
+.light-btn:hover,
+.light-btn:focus {
+  background: rgba(0,0,0,0);
+  color: white;
+  border: 1px solid white;
+}
+
+.dark-btn:hover,
+.dark-btn:focus {
+  background: rgba(0, 0, 0, 0);
+  color: #6D71DF;
+  border: 1px solid #6D71DF;
+}
+
 p {
-  font-size: 1.3rem;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .price-annually {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 .price-monthly {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -58,20 +82,42 @@ p {
   display: none;
 }
 
+.panel-one {
+  box-shadow: -20px 20px 80px  rgba(111,115,229, .2);
+  border-radius: 10px 0 0 10px;
+}
+
+
+
+.panel-three {
+  box-shadow: 20px 20px 80px  rgba(111,115,229, .2);
+  border-radius: 0px 10px 10px 0px;
+}
+
 .pricing-panel {
-  width: 370px;
+  width: 250px;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
-  height: 400px;
+  height: 350px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.panel-two {
+  background-image: linear-gradient(120deg, #A0A7F1,#6D71DF);
+  color: white;
+  padding-bottom: 70px;
+  border-radius: 10px;
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 
 .pricing-panel > p {
   border-bottom: 1px solid lightgray;
-  width: 70%;
+  width: 65%;
   margin: auto;
   padding: 15px;
 }
@@ -113,23 +159,7 @@ body {
   white-space: nowrap;
 }
 
-.panel-one {
-  box-shadow: -20px 20px 80px  rgba(111,115,229, .2);
-  border-radius: 10px 0 0 10px;
-}
 
-.panel-two {
-  background-image: linear-gradient(120deg, #A0A7F1,#6D71DF);
-  color: white;
-  padding-top: 90px;
-  padding-bottom: 70px;
-  border-radius: 10px;
-}
-
-.panel-three {
-  box-shadow: 20px 20px 80px  rgba(111,115,229, .2);
-  border-radius: 0px 10px 10px 0px;
-}
 
 .gradient {
   background-image: linear-gradient(120deg, #A0A7F1,#6D71DF);
@@ -173,6 +203,9 @@ body {
   transition: .4s;
 }
 
+.slider:active {
+  background-color: #C6C7F4;
+}
 .slider:before {
   position: absolute;
   content: "";
@@ -209,4 +242,23 @@ input:checked + .slider:before {
 
 .slider.round::before {
   border-radius: 50%;
+}
+
+@media(max-width: 750px) {
+  .pricing-panel {
+    display: block;
+  }
+
+  .panel-two {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  body {
+    background-image: url(/images/bg-top.svg);
+    background-position: top right; /* this positions the first image */
+    background-repeat: no-repeat; /* this applies to both images */
+    background-color: rgb(247,247,255);
+    background-size: 430px, 430px;
+  }
 }
